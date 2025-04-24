@@ -25,7 +25,8 @@ html {
 }
 
 body {
-    font-family: var(--main-font-family), serif;
+    /*font-family: var(--main-font-family), serif;*/
+    font-family: 'Rubik', sans-serif;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
@@ -199,13 +200,16 @@ section {
     color: transparent;
 }
 
+.logo-hidden {
+    display: none;
+}
 
 .home-wrapper .right-side {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     color: black;
     width: 100%;
     padding-top: 5rem;
@@ -238,7 +242,6 @@ section {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    width: 50%;
 }
 
 .role-design {
@@ -282,9 +285,9 @@ section {
 .about-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: start;
-    font-size: 2rem;
+    font-size: 1.8rem;
     gap: 10rem;
     color: black;
 }
@@ -298,8 +301,8 @@ section {
 .about-wrapper .left-side {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 2rem;
 }
 
@@ -348,6 +351,7 @@ section {
     background-color: var(--white-bg-color);
     color: black;
     transition: 0.3s ease;
+    cursor: pointer;
     /*box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 3px;*/
 }
 
@@ -465,7 +469,7 @@ footer {
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
-    border-radius: 3.5rem;
+    border-radius: 5rem;
     transition: 0.3s ease;
     cursor: pointer;
     /*font-family: Poppins, serif;*/
@@ -489,8 +493,8 @@ footer {
 
 .project-img {
     display: block;
-    width: 50%;
-    border-radius: 1rem;
+    width: 100%;
+    border-radius: 3rem;
 }
 
 .project-btn-group {
@@ -542,7 +546,11 @@ footer {
     }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 880px) {
+    .home-wrapper {
+        padding-top: 5rem;
+    }
+
     .about-wrapper {
         flex-direction: column;
         justify-content: center;
@@ -552,6 +560,7 @@ footer {
     .hero-description {
         width: 100%;
     }
+
 
     .nav-header .nav-list {
         display: none;
@@ -575,6 +584,45 @@ footer {
         align-items: center;
     }
 
+    section {
+        padding: 3rem 10%;
+        gap: 2rem;
+    }
+
+    .project-btn-group {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .project-title {
+        font-size: 1.8rem;
+    }
+
+    .nav-menu .active {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #fffffe;
+        font-size: 4rem;
+        transition: 0.3s ease;
+    }
+
+    #menu-icon {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translate(-50%, -50%);
+    }
+
+    .visit-github {
+        padding-right: 5rem;
+    }
 
 }
 
@@ -595,6 +643,8 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
+
 }
 
 
@@ -605,24 +655,47 @@ footer {
         font-size: 50%;
     }
 
-    .section-wrapper {
-        padding: 1rem;
-    }
+    /*.section-wrapper {*/
+    /*    padding: 1rem;*/
+    /*}*/
     section {
-        padding: 3rem 2rem;
+        padding: 1rem 2rem;
+        gap: 4rem;
+    }
+
+
+    .logo .logo-active {
+        display: none;
+    }
+
+    .logo-hidden {
+        display: block;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        padding: 0.5rem;
     }
 
     .home-wrapper {
         flex-direction: column;
         padding-top: 4rem;
     }
+    /*#menu-icon {*/
+    /*    position: absolute;*/
+    /*    top: 50%;*/
+    /*    right: 20px;*/
+    /*    transform: translate(-50%, -50%);*/
+    /*}*/
 
+    .visit-github {
+        padding-right: 5rem;
+    }
 
     .intro-msg {
         font-size: 3rem;
     }
     .name {
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .hero-description {
         width: 100%;
@@ -642,11 +715,45 @@ footer {
 
     #contact {
         text-align: center;
+        padding-bottom: 4rem;
     }
+
+
+    /*.nav-menu .active {*/
+    /*    position: absolute;*/
+    /*    width: 100%;*/
+    /*    top: 0;*/
+    /*    left: 0;*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    height: 100vh;*/
+    /*    background-color: #fffffe;*/
+    /*    font-size: 4rem;*/
+    /*}*/
 
     .footer-wrapper .nav-list{
         flex-direction: column;
         gap: 1.5rem;
+    }
+
+    .nav-item .nav-link::before {
+        content: "";
+        top: 50px;
+        left: 0;
+        width: 0;
+        height: 5px;
+        background: var(--main-colorful-color);
+    }
+
+
+    .main-wrapper {
+        gap: 4rem;
+    }
+
+    .section-title {
+        font-size: 4rem;
     }
 }
 
