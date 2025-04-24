@@ -1,8 +1,22 @@
 import UnscrambledImg from '../assets/unscramble_me.png';
 
-function CreateCard({groupName, projectDetails}) {
+function ProjectGroup({groupName, projectDetails}) {
     return(
         <>
+            <div className={"project-divider"}>
+                <div className={"project-group-title"}>{groupName}</div>
+                <div className={"project-group js-projects"}>
+                <CreateCard projectDetails={projectDetails} />
+                </div>
+            </div>
+        </>
+    )
+}
+
+function CreateCard({projectDetails}) {
+    return(
+        <>
+
             {Object.keys(projectDetails).map((key, index) => (
                 <div key={index} className={"project-card"}>
                     <img className={"project-img"} src={projectDetails[key].imgSrc} alt={projectDetails[key].imgAlt}/>
@@ -36,14 +50,14 @@ export default function Projects() {
                 imgAlt: "Unscrambled Me",
                 name: 'Unscrambled Me1',
                 description: 'This is a testing project and will be deleted promptly.',
-                button: ['Live Demo', 'GitHub Repo']
+                button: ['Live Demo', 'Source Code']
             },
             unscrambled2: {
                 imgSrc: UnscrambledImg,
                 imgAlt: "Unscrambled Me",
                 name: 'Unscrambled Me2',
                 description: 'This is a testing project and will be deleted promptly.',
-                button: ['Live Demo', 'GitHub Repo']
+                button: ['GitHub Repo']
             },
             unscrambled3: {
                 imgSrc: UnscrambledImg,
@@ -61,45 +75,14 @@ export default function Projects() {
             <h1 className={"section-title"}>Project.</h1>
             <div className={"section-wrapper"}>
                 <div className={"projects-group"}>
-                    <div className={"project-divider"}>
-                        <div className={"project-group-title"}>JavaScript Project</div>
-                        <div className={"project-group js-projects"}>
-                            <div className={"project-card"}>
-                                <img className={"project-img"} src={UnscrambledImg} alt="unscrambled picture"/>
-                                <h3 className={"project-title"}>Unscrambled Me</h3>
-                                <p className={"project-description"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, blanditiis consequuntur corporis doloribus enim esse fuga illo, impedit iure minima nam nihil porro quo repellat sint tenetur totam, unde vero?10
-                                </p>
-                                <div className={"project-btn-group"}>
-                                    <a href={"#"} className={"link btn"}>Live Demo</a>
-                                    <a href={"#"} className={"link btn"}>GitHub Repo</a>
-                                </div>
-                            </div>
-
-                            <div className={"project-card"}>
-                                <img className={"project-img"} src={UnscrambledImg} alt="unscrambled picture"/>
-                                <h3 className={"project-title"}>Unscrambled Me</h3>
-                                <p className={"project-description"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, blanditiis consequuntur corporis doloribus enim esse fuga illo, impedit iure minima nam nihil porro quo repellat sint tenetur totam, unde vero?10
-                                </p>
-                                <div className={"project-btn-group"}>
-                                    <a href={"#"} className={"link btn"}>Live Demo</a>
-                                    <a href={"#"} className={"link btn"}>GitHub Repo</a>
-                                </div>
-                            </div>
-
-                            <div className={"project-card"}>
-                                <img className={"project-img"} src={UnscrambledImg} alt="unscrambled picture"/>
-                                <h3 className={"project-title"}>Unscrambled Me</h3>
-                                <p className={"project-description"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, blanditiis consequuntur corporis doloribus enim esse fuga illo, impedit iure minima nam nihil porro quo repellat sint tenetur totam, unde vero?10
-                                </p>
-                                <div className={"project-btn-group"}>
-                                    <a href={"#"} className={"link btn"}>Live Demo</a>
-                                    <a href={"#"} className={"link btn"}>GitHub Repo</a>
-                                </div>
-                            </div>
-
-                            <CreateCard groupName={''} projectDetails={projectDetails.webDev} />
-                        </div>
-                    </div>
+                    <ProjectGroup groupName={'JavaScript Project'} projectDetails={projectDetails.webDev} />
+                    <ProjectGroup groupName={'C++ Project'} projectDetails={projectDetails.webDev} />
+                    {/*<div className={"project-divider"}>*/}
+                    {/*    <div className={"project-group-title"}>JavaScript Project</div>*/}
+                    {/*    <div className={"project-group js-projects"}>*/}
+                    {/*        <CreateCard groupName={''} projectDetails={projectDetails.webDev} />*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
 
                 </div>
             </div>
