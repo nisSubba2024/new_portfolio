@@ -25,15 +25,15 @@ export default function Skills() {
                          alt={"python-icon"}/>,
             javascript: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt={"javascript-icon"}/>,
             "c++": <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt={"c++-icon"}/>,
-            java: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt={"java-icon"}/>
-            ,
+            // java: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt={"java-icon"}/>
+            // ,
             sql: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt={"sql-icon"}/>
         },
         fronted: {
             html: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt={"html-icon"}/>,
             css: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt={"css-icon"}/>,
             javascript: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt={"javascript-icon"}/>,
-            react: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt={"react-icon"}/>,
+            // react: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt={"react-icon"}/>,
             bootstrap: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt={"bootstrap-icon"}/>
         },
         database: {
