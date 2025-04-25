@@ -1,10 +1,11 @@
 import {SocialIcon} from './Home.jsx'
+
 export default function Contact() {
     const socialIcon = {
         github: <i className="fa-brands fa-github social-icon"></i>,
         linkedin: <i className="fa-brands fa-linkedin social-icon"></i>,
     }
-    return(
+    return (
         <section id={"contact"}>
             <h1 className={"section-title"}>Let's Connect.</h1>
             <div className={"section-wrapper"}>
@@ -15,7 +16,6 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-
         </section>
     )
 }

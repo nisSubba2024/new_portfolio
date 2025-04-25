@@ -5,18 +5,19 @@ import Projects from './pages/Projects.jsx';
 import Contact from './pages/Contact.jsx';
 import Skills from './pages/Skills.jsx';
 import Footer from './pages/Footer.jsx'
+
 export default function () {
     return (
         <>
-            <Navigation />
+            <Navigation/>
             <main className={"main-wrapper"}>
-                <Home />
-                <About />
-                <Skills />
-                <Projects />
-                <Contact />
+                <Home/>
+                <About/>
+                <Skills/>
+                <Projects/>
+                <Contact/>
             </main>
-            <Footer />
+            <Footer/>
         </>
     )
 }
