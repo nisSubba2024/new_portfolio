@@ -11,8 +11,8 @@ export default function Contact() {
             <div className={"section-wrapper"}>
                 <div className={"contact-group"}>
                     <div className={"social-icon-group"}>
-                        <SocialIcon icon={socialIcon.linkedin}/>
-                        <SocialIcon icon={socialIcon.github}/>
+                        <SocialIcon icon={socialIcon.linkedin} link={"https://www.linkedin.com/in/nishan-subba-0813a32a8/"}/>
+                        <SocialIcon icon={socialIcon.github} link={"https://github.com/nisSubba2024"}/>
                     </div>
                 </div>
             </div>

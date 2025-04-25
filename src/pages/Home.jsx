@@ -1,12 +1,8 @@
-// export function IconWrap({icon}) {
-//     return (
-//         <span className={"icon-wrapper"}>{icon}</span>
-//     )
-// }
+import Resume from '../assets/cv/NishanSubbaResume.pdf'
 
-export function SocialIcon({icon}) {
+export function SocialIcon({icon, link}) {
     return (
-        <a className={"link"} href={"#"}>{icon}</a>
+        <a className={"link"} href={link} target={"_blank"}>{icon}</a>
     )
 }
 
@@ -19,12 +15,12 @@ export function Socials() {
     return (
         <>
             <div className={"btn-group"}>
-                <a href={"#"} className={"link btn"}>Download CV</a>
-                <a href={"#"} className={"link btn"}>Contact</a>
+                <a href={Resume} className={"link btn"} download>Download CV</a>
+                <a href={"https://www.linkedin.com/in/nishan-subba-0813a32a8/"} target={"_blank"} className={"link btn"}>Contact</a>
             </div>
             <div className={"social-icon-group"}>
-                <SocialIcon icon={socialIcon.github}/>
-                <SocialIcon icon={socialIcon.linkedin}/>
+                <SocialIcon icon={socialIcon.github} link={"https://github.com/nisSubba2024"}/>
+                <SocialIcon icon={socialIcon.linkedin} link={"https://www.linkedin.com/in/nishan-subba-0813a32a8/"}/>
             </div>
         </>
     )
