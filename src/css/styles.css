@@ -30,7 +30,6 @@ html {
 }
 
 body {
-    /*font-family: var(--main-font-family), serif;*/
     font-family: 'Rubik', sans-serif;
     font-size: 2rem;
     display: flex;
