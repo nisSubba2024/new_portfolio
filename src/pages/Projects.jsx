@@ -1,6 +1,12 @@
-import UnscrambledImg from '../assets/unscramble_me.png';
+import UnscrambledImg from '../assets/project_ss/unscramble_me.png';
 import ParkingPaymentDB from '../assets/project_ss/er-diagram.png';
-
+import FinanceTracker from '../assets/project_ss/financetracker.png';
+import MDAidsAnalysis from '../assets/project_ss/maryland_aid_analysis_ss.png';
+import TicTacToe from '../assets/project_ss/tictactoe.png';
+import HorizonZeroDawn from '../assets/project_ss/horizon_zd_ss.png';
+import WordSearch from '../assets/project_ss/word_search.png';
+import WorldFlags from '../assets/project_ss/world_flags.png';
+import Portfolio from '../assets/project_ss/portfolio_website.png';
 
 function ProjectGroup({groupName, projectDetails}) {
     return (
@@ -56,38 +62,85 @@ export default function Projects() {
             unscrambled: {
                 imgSrc: UnscrambledImg,
                 imgAlt: "Unscrambled Me",
-                name: 'Unscrambled Me1',
-                techStacks: ['SQL', 'PL/SQL', 'Oracle 10g'],
-                description: 'This is a testing project and will be deleted promptly.',
+                name: 'Word Unscrambler',
+                techStacks: ['HTML', 'CSS', 'JS'],
+                description: 'The program sorts each word in the English dictionary and creates a key-value pair hashmap. When the user enters a word, it is sorted and matched against the keys in the hashmap.',
                 button: {
-                    'Live Demo': '#',
-                    'GitHub Repo': '#'
+                    'Live Demo': 'https://nissubba2024.github.io/word_unscrambler/',
+                    'GitHub Repo': 'https://github.com/nisSubba2024/word_unscrambler'
                 }
             },
-            unscrambled2: {
-                imgSrc: UnscrambledImg,
-                imgAlt: "Unscrambled Me",
-                name: 'Unscrambled Me2',
-                description: 'This is a testing project and will be deleted promptly.',
+            HorizonZeroDawn: {
+                imgSrc: HorizonZeroDawn,
+                imgAlt: "Horizon Zero Dawn Forbidden West",
+                name: 'Game Landing Page',
+                description: 'One of my favorite video games is Horizon Zero Dawn. When the sequel Forbidden West was released, I wanted to create a website to promote it. It is a simple game landing page that displays game details and provides links to purchase the game.',
+                techStacks: ['HTML', 'CSS'],
                 button: {
-                    'Live Demo': '#',
-                    'GitHub Repo': '#'
-                }
-                // button: ['GitHub Repo']
+                    'Live Demo': 'https://nissubba2024.github.io/hzd_landing_page/',
+                    'GitHub Repo': 'https://github.com/nisSubba2024/hzd_landing_page'
+                },
             },
-            unscrambled3: {
-                imgSrc: UnscrambledImg,
-                imgAlt: "Unscrambled Me",
-                name: 'Unscrambled Me3',
-                description: 'This is a testing project and will be deleted promptly.',
+            Portfolio: {
+                imgSrc: Portfolio,
+                imgAlt: "Portfolio site",
+                name: 'Portfolio',
+                description: 'A sleek, ultra-responsive portfolio site with light/dark mode and full mobile support, built to showcase my projects and skills.',
+                techStacks: ['HTML', 'CSS', 'JS', 'React'],
                 button: {
-                    'Live Demo': '#',
-                    'GitHub Repo': '#'
+                    'Live Demo': 'www.nishansubba.com',
+                    'GitHub Repo': 'https://github.com/nisSubba2024/new_portfolio'
                 }
-                // button: ['Live Demo', 'GitHub Repo']
+            },
+        },
+        'c++': {
+            wordSearch: {
+                imgSrc: WordSearch,
+                imgAlt: "Word search game",
+                name: 'Word Search',
+                description: 'A console-based implementation of the classic word search game. The program loads data from a file and uses (x, y) coordinates to perform searches.',
+                techStacks: ['C++','Doxygen'],
+                button: {
+                    'GitHub Repo': 'https://github.com/nisSubba2024/word_search',
+                    'Read Doc': 'https://nissubba2024.github.io/word_search/files.html'
+                }
+            },
+            ticTacToe: {
+                imgSrc: TicTacToe,
+                imgAlt: "Tic Tac Toe",
+                name: 'Tic Tac Toe',
+                description: 'A console-based implementation of the classic tic-tac-toe game. The program uses a 2D grid system, and each player takes turns making moves using (x, y) coordinates.',
+                techStacks: ['C++','Doxygen'],
+                button: {
+                    'GitHub Repo': 'https://github.com/nisSubba2024/tic_tac_toe',
+                    'Read Doc': 'https://nissubba2024.github.io/tic_tac_toe/tic_tac_toe_8cpp.html'
+                }
             }
         },
-        databaseDevelopment: {
+        python: {
+            financeTracker: {
+                imgSrc: FinanceTracker,
+                imgAlt: "Finance Tracker",
+                name: 'Finance Tracker',
+                description: 'A console-based finance tracker built with Python. The program uses a file system to load and store data. Features include adding, modifying, and deleting transactions, viewing logs, generating reports, and visualizing financial data.',
+                techStacks: ['Python', 'Doxygen'],
+                button: {
+                    'GitHub Repo': 'https://github.com/nisSubba2024/personal_finance_tracker',
+                    'Read Doc': 'https://nissubba2024.github.io/personal_finance_tracker/annotated.html'
+                }
+            },
+            worldFlags: {
+                imgSrc: WorldFlags,
+                imgAlt: "World Flags",
+                name: 'World Flags',
+                description: 'A web scraper built using Python\'s BeautifulSoup library. The program scrapes flags and country names, then saves the data to a JSON file.',
+                techStacks: ['Python', 'Doxygen'],
+                button: {
+                    'GitHub Repo': 'https://github.com/nisSubba2024/web_scrapper_world_flags/tree/main',
+                }
+            }
+        },
+        DataAnalysis: {
             parkingPayment: {
                 imgSrc: ParkingPaymentDB,
                 imgAlt: "Er diagram of Parking Payment System",
@@ -99,7 +152,16 @@ export default function Projects() {
                 button: {
                     'GitHub Repo': 'https://github.com/nisSubba2024/payment_management_system'
                 }
-                // button: ['Source Code']
+            },
+            mdAnalysis: {
+                imgSrc: MDAidsAnalysis,
+                imgAlt: "MD Analysis dashboard",
+                name: 'Maryland Aid Analysis',
+                techStacks: ['SQL', 'PostgreSQL', 'Excel'],
+                description: 'An exploratory analysis of Maryland aid distribution from 2009 to 2023. The project examines trends over time, budget allocations, and the impact of the COVID-19 pandemic.',
+                button: {
+                    'GitHub Repo': 'https://github.com/nisSubba2024/maryland_aid_data_analysis'
+                }
             }
         }
     }
@@ -107,13 +169,15 @@ export default function Projects() {
 
     return (
         <section id={"projects"}>
-            <h1 className={"section-title"}>Project.</h1>
+            <h1 className={"section-title"}>Projects.</h1>
             <div className={"section-wrapper"}>
                 <div className={"projects-group"}>
-                    <ProjectGroup groupName={'JavaScript Project'} projectDetails={projectDetails.webDev}/>
-                    <ProjectGroup groupName={'C++ Project'} projectDetails={projectDetails.webDev}/>
-                    <ProjectGroup groupName={'Database Management'}
-                                  projectDetails={projectDetails.databaseDevelopment}/>
+                    <ProjectGroup groupName={'HTML CSS JavaScrip Projects'} projectDetails={projectDetails.webDev}/>
+                    <ProjectGroup groupName={'SQL Analysis Projects'}
+                                  projectDetails={projectDetails.DataAnalysis}/>
+                    <ProjectGroup groupName={'Python Projects'} projectDetails={projectDetails.python}/>
+                    <ProjectGroup groupName={'C++ Projects'} projectDetails={projectDetails["c++"]}/>
+
                 </div>
             </div>
 
