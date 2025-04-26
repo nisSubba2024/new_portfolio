@@ -31,6 +31,7 @@ html {
     font-size: 62.5%;
 }
 
+
 body {
     font-family: 'Rubik', sans-serif;
     font-size: 2rem;
@@ -110,6 +111,17 @@ body.dark-mode .project-card .project-description {
 body.dark-mode .footer-wrapper .nav-list .link {
     color: var(--dk-primary-text-color);
 }
+
+body.dark-mode .tech-stack-wrapper {
+    border: 1px solid white;
+    color: var(--dk-paragraph-color);
+}
+
+body.dark-mode .project-card:hover .tech-stack-wrapper:hover {
+    /*background-color: #fffffe;*/
+    color: #000000;
+}
+
 
 #root {
     width: 100%;
@@ -554,9 +566,39 @@ footer {
     font-size: 2.5rem;
 }
 
+.project-tech-group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tech-stack-wrapper {
+    border: 1px solid black;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    color: #121212;
+    cursor: pointer;
+}
+
+.project-card:hover .tech-stack-wrapper {
+    border: 1px solid white;
+    color: #fffffe;
+}
+.project-card:hover .tech-stack-wrapper:hover {
+    background-color: #fffffe;
+    color: #000000;
+}
+
+
 #menu-icon {
     display: none;
 }
+
 
 @media (min-width: 1280px) {
     .project-group {
@@ -719,15 +761,13 @@ footer {
         color: white;
         border-radius: 50%;
         padding: 0.5rem;
+        border: 1px solid black;
     }
+
 
     .home-wrapper {
         flex-direction: column;
         padding-top: 4rem;
-    }
-
-    .visit-github {
-        padding-right: 5rem;
     }
 
     .intro-msg {
@@ -780,6 +820,24 @@ footer {
 
     .section-title {
         font-size: 4rem;
+    }
+
+    .github-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .home-wrapper .right-side {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-wrapper .left-side {
+        justify-content: center;
+        align-items: center;
     }
 }
 
