@@ -7,6 +7,8 @@ import HorizonZeroDawn from '../assets/project_ss/horizon_zd_ss.png';
 import WordSearch from '../assets/project_ss/word_search.png';
 import WorldFlags from '../assets/project_ss/world_flags.png';
 import Portfolio from '../assets/project_ss/portfolio_website.png';
+import DictionaryImg from '../assets/project_ss/dictionary.png';
+
 
 function ProjectGroup({groupName, projectDetails}) {
     return (
@@ -90,6 +92,19 @@ export default function Projects() {
                 button: {
                     'Live Demo': 'www.nishansubba.com',
                     'GitHub Repo': 'https://github.com/nisSubba2024/new_portfolio'
+                }
+            },
+            dictionary: {
+                imgSrc: DictionaryImg,
+                imgAlt: "Dictionary Img",
+                name: 'English Dictionary API',
+                description: 'A responsive web application that allows users to search for word definitions using' +
+                    ' the Free Dictionary API. The app retrieves and displays meanings, part of speech, and audio' +
+                    ' usages of words.',
+                techStacks: ['HTML', 'CSS', 'JS',],
+                button: {
+                    'Live Demo': 'https://nissubba2024.github.io/english_dictionary/',
+                    'GitHub Repo': 'https://github.com/nisSubba2024/english_dictionary'
                 }
             },
         },
