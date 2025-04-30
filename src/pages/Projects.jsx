@@ -8,7 +8,7 @@ import WordSearch from '../assets/project_ss/word_search.png';
 import WorldFlags from '../assets/project_ss/world_flags.png';
 import Portfolio from '../assets/project_ss/portfolio_website.png';
 import DictionaryImg from '../assets/project_ss/dictionary.png';
-
+import DadJokeImg from '../assets/project_ss/dad_joke.png.png';
 
 function ProjectGroup({groupName, projectDetails}) {
     return (
@@ -105,6 +105,17 @@ export default function Projects() {
                 button: {
                     'Live Demo': 'https://nissubba2024.github.io/english_dictionary/',
                     'GitHub Repo': 'https://github.com/nisSubba2024/english_dictionary'
+                }
+            },
+            dadJoke: {
+                imgSrc: DadJokeImg,
+                imgAlt: "Dad joke Img",
+                name: 'Dad Joke Generator',
+                description: 'A program that retries random dad joke from icanhazdadjoke API and displays it.',
+                techStacks: ['HTML', 'CSS', 'JS',],
+                button: {
+                    'Live Demo': 'https://nissubba2024.github.io/random_dad_joke_generator/',
+                    'GitHub Repo': 'https://github.com/nisSubba2024/random_dad_joke_generator'
                 }
             },
         },
