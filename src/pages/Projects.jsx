@@ -8,7 +8,7 @@ import WordSearch from '../assets/project_ss/word_search.png';
 import WorldFlags from '../assets/project_ss/world_flags.png';
 import Portfolio from '../assets/project_ss/portfolio_website.png';
 import DictionaryImg from '../assets/project_ss/dictionary.png';
-import DadJokeImg from '../assets/project_ss/dad_joke.png.png';
+import DadJokeImg from '../assets/project_ss/dad_joke.png';
 
 function ProjectGroup({groupName, projectDetails}) {
     return (
