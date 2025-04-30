@@ -9,6 +9,8 @@ import WorldFlags from '../assets/project_ss/world_flags.png';
 import Portfolio from '../assets/project_ss/portfolio_website.png';
 import DictionaryImg from '../assets/project_ss/dictionary.png';
 import DadJokeImg from '../assets/project_ss/dad_joke.png';
+import RickAndMorty from '../assets/project_ss/rickandmorty.png';
+
 
 function ProjectGroup({groupName, projectDetails}) {
     return (
@@ -111,11 +113,23 @@ export default function Projects() {
                 imgSrc: DadJokeImg,
                 imgAlt: "Dad joke Img",
                 name: 'Dad Joke Generator',
-                description: 'A program that retries random dad joke from icanhazdadjoke API and displays it.',
+                description: 'A program that retrieve random dad joke from icanhazdadjoke API and displays it.',
                 techStacks: ['HTML', 'CSS', 'JS',],
                 button: {
                     'Live Demo': 'https://nissubba2024.github.io/random_dad_joke_generator/',
                     'GitHub Repo': 'https://github.com/nisSubba2024/random_dad_joke_generator'
+                }
+            },
+            rickAndMorty: {
+                imgSrc: RickAndMorty,
+                imgAlt: "Rick and Morty Img",
+                name: 'Rick and Morty DB',
+                description: 'A program that retrieve all the characters and details from Rick and Morty show. It' +
+                    ' list their origin, status, appearance',
+                techStacks: ['HTML', 'CSS', 'JS',],
+                button: {
+                    'Live Demo': 'https://nissubba2024.github.io/rick_and_morty_db/',
+                    'GitHub Repo': 'https://github.com/nisSubba2024/rick_and_morty_db'
                 }
             },
         },
