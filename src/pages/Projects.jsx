@@ -10,6 +10,7 @@ import Portfolio from '../assets/project_ss/portfolio_website.png';
 import DictionaryImg from '../assets/project_ss/dictionary.png';
 import DadJokeImg from '../assets/project_ss/dad_joke.png';
 import RickAndMorty from '../assets/project_ss/rickandmorty.png';
+import TaskManager from '../assets/project_ss/taskManager.png';
 
 
 function ProjectGroup({groupName, projectDetails}) {
@@ -67,7 +68,7 @@ export default function Projects() {
                 imgSrc: UnscrambledImg,
                 imgAlt: "Unscrambled Me",
                 name: 'Word Unscrambler',
-                techStacks: ['HTML', 'CSS', 'JS'],
+                techStacks: ['HTML', 'CSS', 'JavaScript'],
                 description: 'The program sorts each word in the English dictionary and creates a key-value pair hashmap. When the user enters a word, it is sorted and matched against the keys in the hashmap.',
                 button: {
                     'Live Demo': 'https://nissubba2024.github.io/word_unscrambler/',
@@ -90,7 +91,7 @@ export default function Projects() {
                 imgAlt: "Portfolio site",
                 name: 'Portfolio',
                 description: 'A sleek, ultra-responsive portfolio site with light/dark mode and full mobile support, built to showcase my projects and skills.',
-                techStacks: ['HTML', 'CSS', 'JS', 'React'],
+                techStacks: ['HTML', 'CSS', 'JavaScript', 'React'],
                 button: {
                     'Live Demo': 'www.nishansubba.com',
                     'GitHub Repo': 'https://github.com/nisSubba2024/new_portfolio'
@@ -103,7 +104,7 @@ export default function Projects() {
                 description: 'A responsive web application that allows users to search for word definitions using' +
                     ' the Free Dictionary API. The app retrieves and displays meanings, part of speech, and audio' +
                     ' usages of words.',
-                techStacks: ['HTML', 'CSS', 'JS',],
+                techStacks: ['HTML', 'CSS', 'JavaScript',],
                 button: {
                     'Live Demo': 'https://nissubba2024.github.io/english_dictionary/',
                     'GitHub Repo': 'https://github.com/nisSubba2024/english_dictionary'
@@ -114,7 +115,7 @@ export default function Projects() {
                 imgAlt: "Dad joke Img",
                 name: 'Dad Joke Generator',
                 description: 'A program that retrieve random dad joke from icanhazdadjoke API and displays it.',
-                techStacks: ['HTML', 'CSS', 'JS',],
+                techStacks: ['HTML', 'CSS', 'JavaScript',],
                 button: {
                     'Live Demo': 'https://nissubba2024.github.io/random_dad_joke_generator/',
                     'GitHub Repo': 'https://github.com/nisSubba2024/random_dad_joke_generator'
@@ -126,10 +127,21 @@ export default function Projects() {
                 name: 'Rick and Morty DB',
                 description: 'A program that retrieve all the characters and details from Rick and Morty show. It' +
                     ' list their origin, status, appearance',
-                techStacks: ['HTML', 'CSS', 'JS',],
+                techStacks: ['HTML', 'CSS', 'JavaScript',],
                 button: {
                     'Live Demo': 'https://nissubba2024.github.io/rick_and_morty_db/',
                     'GitHub Repo': 'https://github.com/nisSubba2024/rick_and_morty_db'
+                }
+            },
+            taskManager: {
+                imgSrc: TaskManager,
+                imgAlt: "Task Manager Img",
+                name: 'Task Manager',
+                description: 'Built a Task Manager web app using TypeScript with a focus on Object-Oriented Programming (OOP) principles. Implemented interfaces and classes to manage task creation, display, completion, and deletion. The app dynamically updates the DOM, providing a responsive and interactive user experience.',
+                techStacks: ['HTML', 'CSS', 'Typescript', 'OOP'],
+                button: {
+                    'Live Demo': 'https://nissubba2024.github.io/task_manager/',
+                    'GitHub Repo': 'https://github.com/nisSubba2024/task_managerb'
                 }
             },
         },
@@ -185,7 +197,7 @@ export default function Projects() {
                 imgSrc: ParkingPaymentDB,
                 imgAlt: "Er diagram of Parking Payment System",
                 name: 'Parking Payment DB Management',
-                techStacks: ['SQL', 'PL/SQL', 'Oracle 10g'],
+                techStacks: ['SQL', 'PL/SQL', 'Oracle 11g'],
                 description: 'UMBC Capstone project. This Parking Payment Management System allows users to register' +
                     ' vehicles,' +
                     ' find available parking zones, manage sessions, receive expiration alerts, and view detailed session reports including duration and cost.',
