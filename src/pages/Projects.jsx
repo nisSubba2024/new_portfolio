@@ -11,7 +11,7 @@ import DictionaryImg from '../assets/project_ss/dictionary.png';
 import DadJokeImg from '../assets/project_ss/dad_joke.png';
 import RickAndMorty from '../assets/project_ss/rickandmorty.png';
 import TaskManager from '../assets/project_ss/taskManager.png';
-
+import Supermarket from '../assets/project_ss/supermarket.png';
 
 function ProjectGroup({groupName, projectDetails}) {
     return (
@@ -215,6 +215,22 @@ export default function Projects() {
                     'GitHub Repo': 'https://github.com/nisSubba2024/maryland_aid_data_analysis'
                 }
             }
+        },
+        Java: {
+            SupermarketSimulation: {
+                imgSrc: Supermarket,
+                imgAlt: "Supermarket Simulation img",
+                name: 'Supermarket Simulation',
+                techStacks: ['Java', 'LinkedList'],
+                description: 'This Java-based console application simulates a basic supermarket system. It allows' +
+                    ' for customer creation, inventory management (add, remove, update), and simulates checkout' +
+                    ' using a LinkedList to handle customer queues. The system processes checkouts, updates' +
+                    ' inventory, and keeps track of the current number of customers. It also uses core OOP concepts' +
+                    ' and basic data structure usage in a real-world scenario.',
+                button: {
+                    'GitHub Repo': 'https://github.com/nisSubba2024/supermarket_simulation'
+                }
+            },
         }
     }
 
@@ -229,6 +245,7 @@ export default function Projects() {
                                   projectDetails={projectDetails.DataAnalysis}/>
                     <ProjectGroup groupName={'Python Projects'} projectDetails={projectDetails.python}/>
                     <ProjectGroup groupName={'C++ Projects'} projectDetails={projectDetails["c++"]}/>
+                    <ProjectGroup groupName={'Java Projects'} projectDetails={projectDetails.Java}/>
 
                 </div>
             </div>
