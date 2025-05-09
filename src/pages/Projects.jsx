@@ -12,6 +12,9 @@ import DadJokeImg from '../assets/project_ss/dad_joke.png';
 import RickAndMorty from '../assets/project_ss/rickandmorty.png';
 import TaskManager from '../assets/project_ss/taskManager.png';
 import Supermarket from '../assets/project_ss/supermarket.png';
+import ImageEditor from '../assets/project_ss/image_editor.png';
+
+
 
 function ProjectGroup({groupName, projectDetails}) {
     return (
@@ -142,6 +145,17 @@ export default function Projects() {
                 button: {
                     'Live Demo': 'https://nissubba2024.github.io/task_manager/',
                     'GitHub Repo': 'https://github.com/nisSubba2024/task_managerb'
+                }
+            },
+            imageEditor: {
+                imgSrc: ImageEditor,
+                imgAlt: "Image Editor Img",
+                name: 'Image Editor',
+                description: 'This is a web-based image editor built with TypeScript that allows users to apply real-time filters, rotate, and flip images. Users can upload an image, adjust visual effects like brightness or contrast, and download the edited image using a canvas-based rendering system.',
+                techStacks: ['HTML', 'CSS', 'Typescript',],
+                button: {
+                    'Live Demo': 'https://nissubba2024.github.io/image-editor/',
+                    'GitHub Repo': 'https://github.com/nisSubba2024/image-editor'
                 }
             },
         },
