@@ -1,4 +1,3 @@
-import ProfilePic from '../assets/IMG_2909.jpg'
 import {Socials} from './Home.jsx';
 
 export default function About() {
@@ -17,9 +16,6 @@ export default function About() {
                         good use and learn along the way. If something catches your interest, feel free to download my
                         resume below or say hi on LinkedIn.</p>
                     <Socials/>
-                </div>
-                <div className={"right-side"}>
-                    <img className={"about-profile-pic"} src={ProfilePic} alt={""}/>
                 </div>
             </div>
         </section>

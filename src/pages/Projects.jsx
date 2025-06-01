@@ -13,7 +13,7 @@ import RickAndMorty from '../assets/project_ss/rickandmorty.png';
 import TaskManager from '../assets/project_ss/taskManager.png';
 import Supermarket from '../assets/project_ss/supermarket.png';
 import ImageEditor from '../assets/project_ss/image_editor.png';
-
+import CarRentalImg from "../assets/project_ss/car_rental_backend_er_diagram.png";
 
 
 function ProjectGroup({groupName, projectDetails}) {
@@ -159,6 +159,33 @@ export default function Projects() {
                 }
             },
         },
+        Java: {
+            SupermarketSimulation: {
+                imgSrc: Supermarket,
+                imgAlt: "Supermarket Simulation img",
+                name: 'Supermarket Simulation',
+                techStacks: ['Java', 'LinkedList'],
+                description: 'This Java-based console application simulates a basic supermarket system. It allows' +
+                    ' for customer creation, inventory management (add, remove, update), and simulates checkout' +
+                    ' using a LinkedList to handle customer queues. The system processes checkouts, updates' +
+                    ' inventory, and keeps track of the current number of customers. It also uses core OOP concepts' +
+                    ' and basic data structure usage in a real-world scenario.',
+                button: {
+                    'GitHub Repo': 'https://github.com/nisSubba2024/supermarket_simulation'
+                }
+            },
+
+            carRentalBackend: {
+                imgSrc: CarRentalImg,
+                imgAlt: "Car rental img",
+                name: 'Car Rental Backend',
+                techStacks: ['Java', 'Spring Boot', "Maven", "RESTful API", "PostgreSQL"],
+                description: 'Built a full backend system for a car rental service using Java 24, Spring Boot 3.4.5, and PostgreSQL 17. It’s a RESTful API that handles all CRUD operations for users, vehicles, orders, and payments with secure authentication and role-based access. The project uses clean architecture and OOP principles to keep the code modular and easy to maintain. It connects to the database and reflects real-world use cases of car rental businesses, covering everything from vehicle availability to order management and payment processing.',
+                button: {
+                    'GitHub Repo': 'https://github.com/nisSubba2024/car_rental_backend'
+                }
+            },
+        },
         'c++': {
             wordSearch: {
                 imgSrc: WordSearch,
@@ -229,22 +256,6 @@ export default function Projects() {
                     'GitHub Repo': 'https://github.com/nisSubba2024/maryland_aid_data_analysis'
                 }
             }
-        },
-        Java: {
-            SupermarketSimulation: {
-                imgSrc: Supermarket,
-                imgAlt: "Supermarket Simulation img",
-                name: 'Supermarket Simulation',
-                techStacks: ['Java', 'LinkedList'],
-                description: 'This Java-based console application simulates a basic supermarket system. It allows' +
-                    ' for customer creation, inventory management (add, remove, update), and simulates checkout' +
-                    ' using a LinkedList to handle customer queues. The system processes checkouts, updates' +
-                    ' inventory, and keeps track of the current number of customers. It also uses core OOP concepts' +
-                    ' and basic data structure usage in a real-world scenario.',
-                button: {
-                    'GitHub Repo': 'https://github.com/nisSubba2024/supermarket_simulation'
-                }
-            },
         }
     }
 
@@ -255,11 +266,11 @@ export default function Projects() {
             <div className={"section-wrapper"}>
                 <div className={"projects-group"}>
                     <ProjectGroup groupName={'HTML CSS JavaScrip Projects'} projectDetails={projectDetails.webDev}/>
+                    <ProjectGroup groupName={'Java Projects'} projectDetails={projectDetails.Java}/>
                     <ProjectGroup groupName={'SQL Analysis Projects'}
                                   projectDetails={projectDetails.DataAnalysis}/>
                     <ProjectGroup groupName={'Python Projects'} projectDetails={projectDetails.python}/>
                     <ProjectGroup groupName={'C++ Projects'} projectDetails={projectDetails["c++"]}/>
-                    <ProjectGroup groupName={'Java Projects'} projectDetails={projectDetails.Java}/>
 
                 </div>
             </div>

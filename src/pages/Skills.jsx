@@ -29,8 +29,8 @@ export default function Skills() {
                 alt={"javascript-icon"}/>,
             "c++": <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
                         alt={"c++-icon"}/>,
-            // java: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt={"java-icon"}/>
-            // ,
+            java: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt={"java-icon"}/>
+            ,
             sql: <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
                 alt={"sql-icon"}/>
@@ -46,7 +46,16 @@ export default function Skills() {
             // react: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt={"react-icon"}/>,
             bootstrap: <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
-                alt={"bootstrap-icon"}/>
+                alt={"bootstrap-icon"}/>,
+            springBoot:
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" alt={"spring-icon"}/>,
+            tailwindcss:
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt={"tailwindcss-icon"}/>,
+            expressjs:
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" alt={"express-icon"}/>
+
+
+
         },
         database: {
             postgres: <img
